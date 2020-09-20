@@ -1,0 +1,127 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.1);
+    background: linear-gradient(-45deg, red,navy, lightgray,orange, purple,black, yellow); 
+    background-size: 700% 700%;
+    animation: gradient 7s ease infinite;
+    background-attachment: fixed;
+    padding-bottom: 90px;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+h2{
+  text-align: center;
+   color: white; 
+   font-weight: bold;
+    font-size: 50px;
+    animation-name: slide;
+    animation-duration: 3s;
+    text-shadow: 4px 4px #FF0000;
+
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+ol { 
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    background: palevioletred;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal
+}
+.hide{
+    display: none;
+    /* visibility: hidden; */
+}
+
+.fa-plus , .fa-refresh{
+    float: right;
+    cursor: pointer;
+    margin: 5px;
+    background: limegreen;
+
+
+} 
+.fa-plus:hover{
+    background-color: tomato;
+}
+.fa-refresh:hover{
+    background-color: tomato;
+
+}
+.fa-trash ,  .fa-pencil{
+    float: right;
+    cursor: pointer;
+    margin: 8px;
+    background: limegreen;
+    color: white;
+    border: 1px 2px dotted white;
+
+} 
+.fa-trash:hover{
+    background-color: tomato;
+}
+.fa-pencil:hover{
+    background-color: tomato;
+
+}
+
+li {
+    background: #f7f7f7 ;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    color: orange;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 13px 13px 13px 20px;
+    font-style: italic; 
+ 
+}
+/* li:nth-child(2n) {
+    background: darkgray;
+} */
+input {
+    font-size: 18px;
+     color: #2980b9; 
+     background-color: #f7f7f7; 
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+input:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none
+}
+#container {
+    width: 65%;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);  
+}

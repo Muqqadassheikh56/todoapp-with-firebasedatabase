@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="pic.png">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+          apiKey: "AIzaSyAeZtCkXnPEL9Trq4XYEXxUpKr8Hn9zOcM",
+          authDomain: "todoapp56.firebaseapp.com",
+          databaseURL: "https://todoapp56.firebaseio.com",
+          projectId: "todoapp56",
+          storageBucket: "todoapp56.appspot.com",
+          messagingSenderId: "359087881060",
+          appId: "1:359087881060:web:f4f0d2a4a3acbcd391d871",
+          measurementId: "G-VFDJZTWSJQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+
+</head>
+
+<body onload="showdata()">
+    <h2> Welcome To My To-Do Application</h2> </span>
+    <div id="container">
+        <h1>To-Do List <i class="fa fa-refresh" onclick="dltAll()"></i> <i class="fa fa-plus" onclick="return addTodo();"></i>
+        </h1>
+        <input type="text" placeholder="What Do You Want To Do..!" id="todo-item">
+        <ul>
+            <ol id="list">
+            </ol>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
